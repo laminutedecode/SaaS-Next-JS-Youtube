@@ -31,9 +31,14 @@ Ce repository contient le code source pour la création d'un SaaS avec les techn
 4. Configurez les variables d'environnement. Créez un fichier `.env.local` et ajoutez les variables nécessaires :
     ```bash
     NEXTAUTH_URL=http://localhost:3000
-    DATABASE_URL=file:./dev.db
-    STRIPE_SECRET_KEY=your-stripe-secret-key
-    STRIPE_PUBLIC_KEY=your-stripe-public-key
+    DATABASE_URL="file:./dev.db"
+    GITHUB_ID=your-github-id
+    GITHUB_SECRET=your-github-secret
+    GOOGLE_CLIENT_ID=your-google-client-id
+    GOOGLE_CLIENT_SECRET=your-google-client-secret
+    STRIPE_KEY_SECRET=your-stripe-key-secret
+    STRIPE_API_ID=your-stripe-api-id
+    STRIPE_WEBHOOK_SECRET=your-stripe-webhook-secret
     ```
 5. Exécutez les migrations de Prisma pour configurer la base de données :
     ```bash
