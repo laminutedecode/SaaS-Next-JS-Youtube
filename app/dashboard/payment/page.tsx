@@ -16,10 +16,10 @@
     const dataStripe = await getDataStripeUser(user?.id as string);
   
     const itemsPremium = [
-      {name: "Hébergement Web fiable et sécurisé"},
-      {name: "Conception Responsive et Conviviale"},
-      {name: "Fonctionnalités Avancées"},
-      {name: "Support Technique et Mises à Jour"},
+      {name: "Générateur de couleurs"},
+      {name: "Générateur de mot de passe"},
+      {name: "Générateur de QR Code"},
+      {name: "Compresseur d'image"},
     ]
   
     
@@ -56,7 +56,7 @@
               <h3 className="text-md font-black uppercase bg-orange-900 bg-opacity-20 text-orange-500 p-3 rounded-md inline">Pass Premium</h3>
             </div>
             <div className="mt-4 text-6xl font-black ">
-              <span>19,99€</span> <span className="text-sm text-muted-foreground">/ par mois</span>
+              <span>1.99€</span> <span className="text-sm text-muted-foreground">/ par mois</span>
             </div>
             <p className="mt-4 text-muted-foreground">Découvrez les Plaisirs Exclusifs du Développement Web Premium avec notre pass Premium et Profitez d'une experience unique !</p>
             <div className="flex-1 flex flex-col justify-between px6 py-6 bg-secondary rounded-lg m-1 space-t-6 p-3 mt-4">

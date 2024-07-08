@@ -3,7 +3,7 @@
 
 import { Input } from '@/components/ui/input';
 import { Label } from '@radix-ui/react-dropdown-menu';
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { toast } from 'react-toastify';
 
 const caracteres = {
@@ -79,8 +79,8 @@ const PasswordGeneratorForm: React.FC = () => {
         
       </div>
       <div className="mb-4">
-        <Label className="block text-sm font-medium">Options</Label>
-        <div className="grid grid-cols-2 gap-4">
+        <Label className="block text-sm font-medium ">Options</Label>
+        <div className="grid grid-cols-2 gap-4 ">
           {Object.keys(options).map((key) => (
             <div key={key} className="flex items-center">
               <Input
