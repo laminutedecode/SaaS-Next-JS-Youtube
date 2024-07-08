@@ -62,7 +62,7 @@ const PasswordGeneratorForm: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto text-white border border-gray-200 rounded-md p-3 ">
+    <div className="container mx-auto  border border-gray-200 rounded-md p-3 ">
       <h2 className="text-3xl uppercase font-black">Générateur de mot de passe</h2>
       <p className="text-lg text-muted-foreground">Générer des mots de passes sur mesure</p>
       <div className="mb-4 mt-4">
