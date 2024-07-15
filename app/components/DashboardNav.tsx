@@ -1,5 +1,5 @@
 'use client'
-import { NotebookPen, Settings,CreditCard,Image,KeyRound,Palette, QrCode  } from 'lucide-react';
+import { NotebookPen, Settings,CreditCard} from 'lucide-react';
 
 import Link from "next/link";
 
@@ -19,10 +19,6 @@ export default function DashboardNav() {
 
   const menuDashboard = [
     { name: "Notes", icon: NotebookPen, path: "/dashboard/notes" },
-    { name: "Compresseur", icon: Image , path: "/dashboard/compressor" },
-    { name: "Mot de passe", icon: KeyRound   , path: "/dashboard/passwordGenerator" },
-    { name: "Couleurs", icon: Palette , path: "/dashboard/colorsGenerator" },
-    { name: "QR Code", icon: QrCode  , path: "/dashboard/qrcodeGenerator" },
     { name: "Paiement", icon: CreditCard , path: "/dashboard/payment" },
     { name: "Settings", icon: Settings, path: "/dashboard/settings" },
   ];
