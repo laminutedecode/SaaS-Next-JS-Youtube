@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Rediriger les chemins spécifiques vers leurs fichiers HTML
+  RewriteRule ^dashboard$ /dashboard.html [L]
+  RewriteRule ^dashboard/notes$ /notes.html [L]
+  RewriteRule ^dashboard/settings$ /settins.html [L]
+  RewriteRule ^dashboard/payment$ /payment.html [L]
+
+
+  # Toutes les autres demandes vers index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
